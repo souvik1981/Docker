@@ -1,0 +1,7 @@
+sudo apt-get update -y
+sudo apt-get install docker.io -y
+sudo systemctl status docker
+sudo systemctl start docker
+sudo usermod -aG docker vagrant
+-----> Start a new session so that the user group addition will take effect
+docker --version
